@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.0.0)
+
+project(cmakeCudaDirTest)
+
+find_package(CUDA REQUIRED)
+
+list(APPEND USER_INC ${CUDA_INCLUDE_DIRS})
+
+add_subdirectory(lib)
+
+include_directories( ${PROJECT_SOURCE_DIR}/lib ${USER_INC} )
+
+CUDA_ADD_EXECUTABLE(cmakeCudaDirTest 
+	main.cpp
+	)
+	
+target_link_libraries(cmakeCudaDirTest
+	cudalib
+)
