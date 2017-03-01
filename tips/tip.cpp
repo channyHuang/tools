@@ -27,8 +27,9 @@ tipClass::tipClass(QWidget *parent)
 
 	setLayout(mainlayout);
 
-	setWindowFlags(windowFlags() | Qt::WindowStaysOnTopHint);
-	setWindowOpacity(0.7);
+	//setWindowFlags(windowFlags() | Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);
+	setWindowFlags(windowFlags() | Qt::WindowStaysOnBottomHint);
+	setWindowOpacity(0.5);
 }
 
 tipClass::~tipClass()

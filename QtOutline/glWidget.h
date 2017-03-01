@@ -1,7 +1,7 @@
 #ifndef GLWIDGET_H
 #define GLWIDGET_H
 
-#include "E:/thirdLib/gl/glew.h"
+#include "freeglut.h"
 
 #include <QtOpenGL/QGLWidget>
 

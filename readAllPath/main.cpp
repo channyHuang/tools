@@ -4,7 +4,7 @@
 #include <QDir>
 #include <QFileInfoList>
 
-QFileInfoList GetFileList(QString path)
+QFileInfoList GetPathList(QString path)
 {
     QDir dir(path);
     QFileInfoList folder_list = dir.entryInfoList(QDir::Dirs | QDir::NoDotAndDotDot);
@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
 		return 0;
 	}
 	
-	QFileInfoList list = GetFileList(argv[1]);
+	QFileInfoList list = GetPathList(argv[1]);
 	std::ofstream of("path.txt");
 	for each (QFileInfo fileinfo in list) {
 		of << fileinfo.absoluteFilePath().toStdString().c_str() << std::endl;

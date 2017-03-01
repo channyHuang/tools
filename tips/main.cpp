@@ -3,7 +3,7 @@
 
 #include <QtPlugin>
 
-Q_IMPORT_PLUGIN(QWindowsIntegrationPlugin);
+//Q_IMPORT_PLUGIN(QWindowsIntegrationPlugin);
 
 int main(int argc, char *argv[])
 {
