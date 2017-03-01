@@ -1,5 +1,0 @@
-include(CAPGSourceGrouping)
-include(CAPGQtSupport)
-include(CAPGLibsSupport)
-include(CAPGEnvCheck)
-include(CAPGInstall)

@@ -1,7 +1,0 @@
-macro(acmake_find_package)
-    if(ANDROID)
-        find_host_package(${ARGN})
-    else()
-        find_package(${ARGN})
-    endif()
-endmacro()

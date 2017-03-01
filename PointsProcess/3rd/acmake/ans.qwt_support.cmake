@@ -1,8 +1,0 @@
-macro(qwt_support TARGET)
-    find_package(Qwt6 REQUIRED)
-    if(NOT Qwt6_Qt4_FOUND)
-        message(FATAL_ERROR "Cannot find Qt4.")
-    endif()
-    include_directories(${Qwt6_INCLUDE_DIR})
-    target_link_libraries(${TARGET} ${Qwt6_Qt4_LIBRARY})
-endmacro()
